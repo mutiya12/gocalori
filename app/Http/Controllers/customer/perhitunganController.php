@@ -39,7 +39,7 @@ class perhitunganController extends Controller
             }elseif($detail->kegiatan == 'berat'){
                 $total = $bmr* 1.725;
             }
-        }elseif($detail->gender == 'F'){
+        }elseif($detail->gender == 'M'){
             $bmr = 66.4730 + (13.7516 * $detail->berat) + (5.0033 * $detail->tinggi) - (6.7550 * $detail->usia);
             if($detail->kegiatan == 'sedang'){
                 $total = $bmr* 1.55;

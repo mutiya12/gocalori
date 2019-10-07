@@ -55,9 +55,8 @@
                                             </tr>
                                             @endforeach
                                         </tbody>
-                                    </table>
-                                    @foreach ($history as $key=> $historys)
-                                    @if($historys->id != 'null')
+</table>
+                                    @if(count($history) != 0 )
                                     <div class="form-group">
                                             <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
                                                 <form action=" {{ route('perhitungan.delete') }}" method="POST">
@@ -67,7 +66,6 @@
                                             </div>
                                         </div>
                                     @endif
-                                    @endforeach
                                 </div>
                             </div>
                         </div>
