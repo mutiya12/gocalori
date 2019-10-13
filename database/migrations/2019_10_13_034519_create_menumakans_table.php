@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMenusTable extends Migration
+class CreateMenumakansTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,14 @@ class CreateMenusTable extends Migration
      */
     public function up()
     {
-        Schema::create('menus', function (Blueprint $table) {
+        Schema::create('menumakans', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('id_rm');
-            $table->String('mame');
-            $table->float('tot_kalori');
+            $table->timestamps();
+            $table->String('name');
             $table->Integer('harga');
-
-            // $table->foreign('id_rm')->references('id')->on('rumah_makans');
+            $table->float('tot_kalori');
+            $table->String('keterangan');
+            $table->String('foto');
         });
     }
 

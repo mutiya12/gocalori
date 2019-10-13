@@ -15,20 +15,20 @@ var validator = (function($){
 	/* general text messages
 	*/
 	message = {
-		invalid			: 'invalid input',
-		empty			: 'please put something here',
-		min				: 'input is too short',
-		max				: 'input is too long',
-		number_min		: 'too low',
-		number_max		: 'too high',
+		invalid			: 'inputan tidak valid',
+		empty			: 'tidak boleh kosong',
+		min				: 'inputan terlalu pendek',
+		max				: 'inputan terlalu panjang',
+		number_min		: 'inputan terlalu kecil',
+		number_max		: 'inputan terlalu besar',
 		url				: 'invalid URL',
-		number			: 'not a number',
-		email			: 'email address is invalid',
-		email_repeat	: 'emails do not match',
-		password_repeat	: 'passwords do not match',
-		repeat			: 'no match',
-		complete		: 'input is not complete',
-		select			: 'Please select an option'
+		number			: 'inputkan angka!',
+		email			: 'alamat email tidak valid',
+		email_repeat	: 'email tidak cocok',
+		password_repeat	: 'password tidak cocok',
+		repeat			: 'tidak cocok',
+		complete		: 'inputan tidak lengkap',
+		select			: 'pilih salah satu'
 	};
 	
 	if(!window.console){
@@ -87,6 +87,7 @@ var validator = (function($){
 				}
 				return true;
 			}
+			
 			if( lengthRange && a.length < lengthRange[0] ){
 				alertTxt = message.min;
 				return false;

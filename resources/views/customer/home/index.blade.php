@@ -563,15 +563,6 @@
 
                             <!-- end of weather widget -->
                         </div>
-
-
-
-
-
-
-
-
-
                     </div>
 
                 </div>

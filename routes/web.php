@@ -26,11 +26,28 @@ Route::namespace('customer')->group(function () {
 
 });
 
+// Route::namespace('rumahmakan')->group(function () {
+
+    
+
+// });
+
+Route::get('rumahmakan/tambahmenu', 'rumahmakan\tambahmenuController@index')->name('rumahMakan.index');
+Route::post('rumahmakan/tambahmenu/store', 'rumahmakan\tambahmenuController@store')->name('rumahMakan.store');
+Route::get('rumahmakan/tambahmenu/create', 'rumahmakan\tambahmenuController@create')->name('rumahMakan.create');
+Route::get('rumahmakan/tambahmenu/edit/{id}', 'rumahmakan\tambahmenuController@edit')->name('rumahMakan.edit');
+Route::post('rumahmakan/tambahmenu/{id}', 'rumahmakan\tambahmenuController@update')->name('rumahMakan.update');
+Route::post('rumahmakan/tambahmenu/delete/{id}', 'rumahmakan\tambahmenuController@destroy')->name('rumahMakan.delete');
+
 Route::get('loginlama', function () {
     return view('loginlama');
 });
 Route::get('home1', function () {
     return view('home');
+});
+
+Route::get('rumahmakan/melihatmenu', function () {
+    return view('rumahmakan.melihatmenu');
 });
 
 // Route::resource('login','LoginController');

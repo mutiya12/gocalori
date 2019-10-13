@@ -63,7 +63,7 @@
                         </div>
                         <div class="profile_info">
                             <span>Welcome,</span>
-                            <h2>Anthony Fernando</h2>
+                            <h2>Rumah Makan Sehat</h2>
                         </div>
                     </div>
                     <!-- /menu prile quick info -->
@@ -79,15 +79,16 @@
                                 
                                 <li class="@yield('dashboard')"><a href="{{ route('customer.home') }}"><i class="fa fa-home"></i> Home</a></li>
                                 
-                                <li class="@yield('perhitungan')"><a href="{{ route('perhitungan.index') }}"><i class="fa fa-edit"></i> Perhitungan </a>
+                                <li class="@yield('perhitungan')"><a href="{{ route('perhitungan.index') }}"><i class="fa fa-edit"></i> Menu </a>
                                 </li>
                                 <li><a><i class="fa fa-desktop"></i> UI Elements <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu" style="display: none">
-                                        <li><a href="general_elements.html">General Elements</a>
+                                        <li><a href="e_commerce.html">E-commerce</a>
                                         </li>
-                                        <li><a href="media_gallery.html">Media Gallery</a>
+                                        <li><a href="projects.html">Projects</a>
                                         </li>
-                                        
+                                        <li><a href="project_detail.html">Project Detail</a>
+                                        </li>  
                                     </ul>
                                 </li>
 
@@ -115,7 +116,6 @@
                   
                 </div>
             </div>
-
             <!-- top navigation -->
             <div class="top_nav">
 
@@ -128,7 +128,7 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li class="">
                                 <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                    <img src="{{ asset('images/img.jpg') }}" alt="">John Doe
+                                    <img src="{{ asset('images/img.jpg') }}" alt="">Rumah Makan Sehat
                                     <span class=" fa fa-angle-down"></span>
                                 </a>
                                 <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
@@ -161,7 +161,7 @@
                                         <img src="{{ asset('images/img.jpg') }}" alt="Profile Image" />
                                     </span>
                                             <span>
-                                        <span>John Smith</span>
+                                        <span>Rumah Makan Sehat</span>
                                             <span class="time">3 mins ago</span>
                                             </span>
                                             <span class="message">
